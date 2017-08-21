@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<title>Uploader Portal</title>
+</head>
+<body>
+<div class="center-on-page">
+	<form id="uploadform" action = "upload.php" method = "POST" enctype = "multipart/form-data">
+		<h1>Knowledge Uploader Portal</h1>
+		<h3>File Type</h3>
+			<input type="radio" name="file" id="rb1" value="Document" required />
+			<label for="rb1">Documents</label>
+			<input type="radio" name="file" id="rb2" value="Audio" required />
+			<label for="rb2">Audio</label>
+			<input type="radio" name="file" id="rb3" value="Video" required />
+			<label for="rb3">Video</label>
+		<h3>Upload Folder</h3>
+			<input type="radio" name="folder" id="rb4" value="Knowledge_Transfer" required />
+			<label for="rb4">Knowledge Transfer</label>
+			<input type="radio" name="folder" id="rb5" value="Sprint_Demo" required />
+			<label for="rb5">Sprint Demo</label>
+			<input type="radio" name="folder" id="rb8" value="Grooming_Video" required />
+			<label for="rb8">Grooming Video</label> 
+			<input type="radio" name="folder" id="rb6" value="Technical_Documentation" required />
+			<label for="rb6">Technical Documentation</label>
+			<input type="radio" name="folder" id="rb7" value="Process_Documentation" required />
+			<label for="rb7">Process Documentation</label>
+		<br /><br /><br />
+		<input type="file" name="image" id="file" class="inputfile" required />
+		<label for="file">Choose a file</label>
+		<input type = "submit" name="upload"  id="submit" value="Start Uploading" />
+	</form>
+</div>
+</body>
+</html>
