@@ -5,7 +5,7 @@
     <mkdir dir="dist" />
 </target>
 <target name="compile" depends="init">
-    <javac srcdir="C:\Users\cam_systinet_auto\.jenkins\workspace\HelloWorld" destdir="build/classes" />
+    <javac srcdir="." destdir="build/classes" />
 </target>
 
 <target name="compress" depends="compile">
